@@ -33,3 +33,5 @@ formCadastro.addEventListener("submit", function(evento){
     // Executar a função para carregar as informações
     carregarInformacoes()
 })
+
+
