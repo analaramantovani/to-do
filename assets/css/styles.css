@@ -56,9 +56,17 @@ header {
 
 /* GREGA */
 #listaTarefas {
+
     background-color: #f0f0f0; 
     padding: 20px; 
     border-radius: 8px; 
+
+    background-color:#E0DCE4; 
+    padding: 10px; 
+    border-radius: 8px; 
+    border: #6B6572;
+    height: 110px;
+
 }
 
 .lista-tarefas {
@@ -73,6 +81,7 @@ header {
 .botao-concluir {
     background-color: transparent; 
     border: 2px solid purple; 
+    border: 2px solid #9359F3; 
     border-radius: 50%; 
     width: 25px; 
     height: 20px;
@@ -85,6 +94,12 @@ header {
     margin: 0; 
     font-size: 17px; 
     color: #262428; 
+
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+
 }
 
 .excluir-tarefa {
@@ -96,12 +111,16 @@ header {
 .excluir-tarefa img {
     width: 20px; 
     height: auto;
+   transform: translateY(-55px);
+
 }
 
 .excluir {
     display: flex;
     gap: 1em;
 }
+
+/* Grega fim */
 
 
 .tarefas {
