@@ -234,6 +234,8 @@ header {
     border: var(--gray-400) 0.5px solid;
     padding: 16px;
     display: flex;
+    align-items: center;  
+    justify-content: space-between;
     border-radius: 9px;
 }
 
@@ -241,11 +243,16 @@ header {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .concluido p {
     text-decoration: line-through;
     color: var(--gray-500);
+    text-align: left;
+     margin-left: 10px;
+}
+
 
 /* GREGA */
 #listaTarefas {
