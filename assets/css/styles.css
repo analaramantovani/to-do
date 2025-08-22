@@ -100,7 +100,7 @@ header {
 .excluir {
     display: flex;
     gap: 1em;
-
+}
 
 .tarefas {
     display: flex;
@@ -206,4 +206,23 @@ header {
 #formCadastroTarefa img{
     padding-left: 0.8em;
 
+}
+
+.concluido {
+    background-color: var(--gray-100);
+    border: var(--gray-400) 0.5px solid;
+    padding: 16px;
+    display: flex;
+    border-radius: 9px;
+}
+
+.concluido button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.concluido p {
+    text-decoration: line-through;
+    color: var(--gray-500);
 }
