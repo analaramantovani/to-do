@@ -42,6 +42,14 @@ body {
     font-weight: normal;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: var(--gray-330);
+   padding: 4em 0;
+}
+
 #formCadastroTarefa button{
     background-color: var(--purple-dark);
     width: 12vh;
@@ -62,3 +70,8 @@ body {
     border: none ;
     box-shadow: 0vh 0.2vh 0vh 0.2vh var(--gray-400);
 }
+
+#formCadastroTarefa{
+    margin-top: -4vh;
+}
+
