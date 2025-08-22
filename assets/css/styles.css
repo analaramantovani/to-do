@@ -17,11 +17,16 @@
    
 }
 
+.d-flex{
+    display: flex;
+}
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 main{
@@ -35,5 +40,25 @@ body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
+}
 
+#formCadastroTarefa button{
+    background-color: var(--purple-dark);
+    width: 12vh;
+    height: 8vh;
+    border-radius: 1.2vh;
+    border: none;
+    color: var(--gray-100);
+    margin-left: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formCadastroTarefa input{
+    width: 100vh;
+    height: 8vh;
+    border-radius: 1.2vh;
+    border: none ;
+    box-shadow: 0vh 0.2vh 0vh 0.2vh var(--gray-400);
 }
