@@ -53,6 +53,7 @@ header {
 }
 
 
+
 /* GREGA */
 #listaTarefas {
     background-color:#E0DCE4; 
@@ -109,6 +110,7 @@ header {
     gap: 1em;
 }
 /* Grega fim */
+
 .tarefas {
     display: flex;
     justify-content: space-between;
@@ -212,5 +214,58 @@ header {
 
 #formCadastroTarefa img{
     padding-left: 0.8em;
+}
 
+/* GREGA */
+#listaTarefas {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border-radius: 8px; 
+}
+
+.lista-tarefas {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 2px;
+    padding: 5px 10px; 
+    border-radius: 5px;
+
+}
+
+.botao-concluir {
+    background-color: transparent; 
+    border: 2px solid purple; 
+    border-radius: 50%; 
+    width: 25px; 
+    height: 20px;
+    margin-right: 10px; 
+    cursor: pointer; 
+}
+
+.texto-lista {
+    flex-grow: 1;
+    margin: 0; 
+    font-size: 17px; 
+    color: #262428; 
+}
+
+.excluir-tarefa {
+    background: none; 
+    border: none; 
+    margin-left: 680px;
+}
+
+.excluir-tarefa img {
+    width: 20px; 
+    height: auto;
+}
+
+.excluir {
+    display: flex;
+    gap: 1em;
+}
+
+.tarefas {
+    display: flex;
+    justify-content: space-between;
 }
