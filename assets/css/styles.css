@@ -53,7 +53,7 @@ header {
 #formCadastroTarefa button{
     background-color: var(--purple-dark);
     width: 12vh;
-    height: 8vh;
+    height: 7vh;
     border-radius: 1.2vh;
     border: none;
     color: var(--gray-100);
@@ -61,17 +61,23 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #formCadastroTarefa input{
     width: 100vh;
-    height: 8vh;
+    height: 7vh;
     border-radius: 1.2vh;
     border: none ;
     box-shadow: 0vh 0.2vh 0vh 0.2vh var(--gray-400);
+    text-align: left;
+    padding: 0.8vh;
 }
 
 #formCadastroTarefa{
     margin-top: -4vh;
 }
 
+#formCadastroTarefa img{
+    padding-left: 0.8em;
+}
