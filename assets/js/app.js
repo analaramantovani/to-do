@@ -66,6 +66,24 @@ formCadastro.addEventListener("submit", function(evento){
         concluido: false
     }
     
+    // Verifica se tarefa está vazia
+    if(tarefa.trim() == ""){
+        alert("A tarefa está vazia!")
+        return false;
+    }
+    
+    
+    var jaExiste = listaTarefas.find(function(item) {
+        if (item.tarefa.toLowerCase() == tarefa.toLowerCase()) {
+            return true
+        }
+        return false
+    })
+
+    if (jaExiste) {
+        alert("Tarefa já cadastrada")
+        return false;
+    }
     // Adicionar na lista o que a pessoa digitou 
     listaTarefas.push(objSalva)
 
@@ -78,11 +96,19 @@ formCadastro.addEventListener("submit", function(evento){
 
 
 function exibirListaTarefas() {
+    var busca = document.getElementById("inputBusca").value
+
     var html = document.getElementById("listaTarefas")
     html.innerHTML = ""
     listaTarefas.forEach(function(item) {
+        var css = ""
+
+        if (item.concluido == true) {
+            
+        }
         if (item.concluido === true) {
-            html.innerHTML += `
+            if (item.tarefa.includes(busca)) {
+                html.innerHTML += `
                 <div class="done">
                     <button onclick='concluirTarefa("${item.tarefa}")' title="Concluir Tarefa"></button>
                     <p>${item.tarefa}</p>
@@ -91,6 +117,8 @@ function exibirListaTarefas() {
                     </button>
                 </div>
             `
+            }
+            
         } 
         else {
             html.innerHTML += `
